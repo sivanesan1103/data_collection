@@ -152,9 +152,9 @@ let pic = [
 
 ```
 ## node js install
-  1.npm init
-  2.npm i
-  3.nodemon
+  1. npm init
+  2. npm i
+  3. nodemon
   
 
 

@@ -8,7 +8,7 @@ Our data collection website offers an intuitive platform for securely gathering 
   4. upload photos
   5. todo list
 
-##node js packages
+## node js packages
 
 ```
 const express = require("express"); //express
@@ -26,7 +26,7 @@ app.use(bodyParser.urlencoded({ extended: true })); //parser
 ```
 
 
-##middele ware
+## middele ware
 
 ```
 const myLogger = function (req, res, next) {
@@ -50,20 +50,20 @@ exports.day= function (){
 ```
 const date = require(__dirname + "/date.js");
 ```
-##listen
+## listen
 ```
 app.listen(port, function (req, res) {
   console.log("server is up");
 });
 
 ```
-##root route get
+## root route get
 ```
 app.get("/", function (req, res) {
   res.render("signup", { bg: bg });
 });
 ```
-##root route get
+## root route get
 ```
 app.post("/", function (req, res) {
   var user_name = req.body.username;
@@ -81,7 +81,7 @@ app.post("/", function (req, res) {
   }
 });
 ```
-##fs
+## fs
 ```
    var savedata = (data, file) => {
       fs.writeFile(file, JSON.stringify(data, null, 2), (err) => {
@@ -95,7 +95,7 @@ app.post("/", function (req, res) {
 
     savedata(posts, "data.josn");
 ```
-##creat new post
+## creat new post
 ```
 app.get("/posts/:topic", (req, res) => {
   var test = _.lowerCase(req.params.topic);
@@ -124,7 +124,7 @@ app.get("/posts/:topic", (req, res) => {
     }
   });
 ```
-##multer 
+## multer 
 ```
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
@@ -151,7 +151,7 @@ let pic = [
 ];
 
 ```
-##node js install
+## node js install
   1.npm init
   2.npm i
   3.nodemon

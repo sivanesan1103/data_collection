@@ -1,0 +1,30 @@
+<%- include('partials/_header_todo')%>
+<body >
+
+    <button onclick="javascript:history.back()" >Back to previous page</button>
+
+
+     <button onclick="bg()" style="background-color: bisque;">Set background</button>
+    <div class="box" id="heading">
+    <h1><%= listTitle %> </h1>
+    </div>
+    
+    <div class="box">
+   <% for(var i=0;i<additem.length;i++){%>
+    <div class="item">
+        <input type="checkbox" > 
+       <p><%= additem[i] %></p> 
+    </div> 
+   <% }%>
+    
+    
+    <form action="/todo" method="post">
+        <input type="text" name="newItem" placeholder="Newitem" autocomplete="off">
+        <button type="summit" class="kk" name="list" value="<%= listTitle %>">+</button>
+    </form>
+    </div>
+   
+    <script src="js/bg.js"></script>
+</body>
+<%- include('partials/_footer_todo')%>
+</html>

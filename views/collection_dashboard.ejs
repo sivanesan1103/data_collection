@@ -1,0 +1,48 @@
+<%- include("partials/_headcoldash") -%>
+<body>
+    <%- include("partials/sidebar") -%>
+    <button onclick="bg()" style="background-color: bisque;">Set background</button>
+    <script src="js/bg.js"></script>
+    <style>
+        .card {
+            margin-right: auto;
+            margin-left: auto;
+            box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+            border-radius: 5px;
+            backdrop-filter: blur(14px);
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #FFCEFE;
+        }
+  
+
+    </style>
+    <div class="album py-5" >
+
+    <div class="container">
+       
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <% posts.forEach((post) => {%>
+            <div class="col" >
+              
+                <div class="card shadow-sm "  style="width: 18rem; " >
+                   
+                    <img src="/uploads/<%=post.filename; %>" class="card-img-top" alt="<%= post.Profile %>">
+                    
+                        <div class="card-body">
+                            <h5 class="card-title"><%= post.fname%></h5>
+                            <p class="card-text"><%= post.descretion%></p>
+                            <a href="/posts/<%=post.fname%>" class="btn" style="background-color: #C3ACD0;">Open</a>
+                        </div>
+                        
+                </div>
+                
+            </div>
+            <%});%>
+        </div>
+        
+    </div>
+
+
+
+
+</body>

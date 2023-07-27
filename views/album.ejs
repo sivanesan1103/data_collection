@@ -1,0 +1,41 @@
+
+<body>
+ 
+  <style>
+      .card {
+          margin-right: auto;
+          margin-left: auto;
+          box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+          border-radius: 5px;
+          backdrop-filter: blur(14px);
+          background-color: rgba(255, 255, 255, 0.2);
+       
+      }
+
+
+  </style>
+  <div class="album py-5" >
+
+  <div class="container">
+     
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <% for(var i=0; i<album.length; i++){%>
+          <div class="col" >
+            
+              <div class="card shadow-sm "  style="width: 18rem; " >
+                 
+                  <img src="/uploads/<%=album[i]%>" class="card-img-top" alt="">
+                  
+                      
+              </div>
+              
+          </div>
+          <%};%>
+      </div>
+      
+  </div>
+
+
+
+
+</body>

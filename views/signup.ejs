@@ -1,0 +1,31 @@
+<%- include("partials/_headsign_in") -%>
+
+ <body class="d-flex align-items-center py-4" >
+
+<main class="form-signin w-100 m-auto">
+  
+  <form method="post">
+    <img class="" src="/img_src/svg/Batman-Logo.svg" alt="" width="300" height="200">
+    <!-- <img class="" src="/img/transparent-nude-png-porn-2.png" alt="" width="100" height="250"> -->
+    <h1 class="h3 mb-3 fw-normal" style="color:#645CBB">sign in</h1>
+    <div class="form-floating">
+      <input type="text" class="form-control" id="floatingInput" name="username" placeholder="Username" style=" background: transparent;">
+      <label for="floatingInput">username</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password" style=" background: transparent;">
+      <label for="floatingPassword">Password</label>
+    </div>
+
+    <button class="btn w-100 py-2"  style="background-color: #645CBB; color: aliceblue;" type="submit">Sign in</button>
+
+  </form>
+  <button onclick="bg()" style="background-color: bisque;">Set background</button>
+  <h3 style="color:red"> <%=locals.contactContentss%></h3>
+
+</main>
+
+<script src="js/bg.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </body>
+</html>
